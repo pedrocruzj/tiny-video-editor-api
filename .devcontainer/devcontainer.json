@@ -1,0 +1,12 @@
+{
+  "name": "Meu Container Python",
+  "dockerFile": "../docker/dockerfiles/app.dockerfile",
+  "context": "..",
+  "settings": {
+    "python.defaultInterpreterPath": "/usr/local/bin/python"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance"
+  ]
+}

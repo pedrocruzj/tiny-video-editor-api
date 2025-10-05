@@ -1,0 +1,2 @@
+Django==5.2.7
+ffmpeg-python==0.2.0

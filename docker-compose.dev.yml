@@ -1,0 +1,21 @@
+networks:
+  my-network:
+    driver: bridge
+
+services:
+  # APP
+  my-app:
+    container_name: my-app
+    build:
+      context: .
+      dockerfile: docker/dockerfiles/app.dockerfile
+    working_dir: /usr/src/app
+    ports:
+      - "8080:8000"
+    volumes:
+      - ./:/usr/src/app/
+    environment:
+      - ROOT_PATH=/usr/src/app/
+    user: "1000:1000"
+    networks:
+      - my-network
