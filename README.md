@@ -1,4 +1,4 @@
-# 🎬 Video Edit API
+# 🎬 Tiny video editor API
 
 A simple API that allows you to resize a video and add overlays to it.
 
