@@ -12,7 +12,4 @@ then
 elif [ $1 == '-r' ]
 then
    docker-compose -f docker-compose.dev.yml restart
-elif [ $1 == 'swagger' ]
-then
-   docker exec my-app php artisan l5-swagger:generate
 fi
