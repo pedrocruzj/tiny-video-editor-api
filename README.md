@@ -26,10 +26,10 @@ This endpoint processes a video by resizing it and optionally adding image overl
 
 ### Parameters
 
-| Name   | Type     | Required | Description                                         |
-| ------ | -------- | -------- | --------------------------------------------------- |
-| `src`  | `string` | ✅       | URL of the source video.                            |
-| `data` | `object` | ✅       | JSON object containing video settings and overlays. |
+| Name      | Type     | Required | Description                                         |
+| --------- | -------- | -------- | --------------------------------------------------- |
+| `src`     | `string` | ✅       | URL of the source video.                            |
+| `options` | `object` | ✅       | JSON object containing video settings and overlays. |
 
 ---
 
