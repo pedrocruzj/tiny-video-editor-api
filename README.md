@@ -54,6 +54,39 @@ Content-Type: application/json
         "left": 50,
         "top": 50
       }
+    ],
+    "texts": [
+     {
+        "content": "Example!!!",
+        "left": 10,
+        "top": 10,
+        "color": "red",
+        "size": 35,
+        "font_file": "AlexBrush-Regular.ttf"
+     }
+    ]
+  }
+}
+```
+
+## 🔤 Font file
+
+To add text with a specific font, move the font file to the storage/fonts directory. Then, pass the font file name to the **font_file** property in the body of the text. Example:
+
+```json
+{
+  "src": "https://example.com/video.mp4",
+  "options": {
+    "main": {
+      ...
+    },
+    "texts": [
+     {
+        "content": "My text",
+        "color": "white",
+        "size": 19,
+        "font_file": "arial.ttf" <--- Put here
+     }
     ]
   }
 }
